@@ -136,3 +136,14 @@ C:\Users\Admin\source\repos\ProyectoSoftware2\ProyectoSoftware2\obj\Debug\Proyec
 C:\Users\Admin\source\repos\ProyectoSoftware2\ProyectoSoftware2\obj\Debug\ProyectoSoftware2.csproj.CoreCompileInputs.cache
 C:\Users\Admin\source\repos\ProyectoSoftware2\ProyectoSoftware2\obj\Debug\ProyectoSoftware2.dll
 C:\Users\Admin\source\repos\ProyectoSoftware2\ProyectoSoftware2\obj\Debug\ProyectoSoftware2.pdb
+C:\Users\Admin\source\repos\ProyectoSoftware2\ProyectoSoftware2\bin\Mono.Security.dll
+C:\Users\Admin\source\repos\ProyectoSoftware2\ProyectoSoftware2\bin\Npgsql.dll
+C:\Users\Admin\source\repos\ProyectoSoftware2\ProyectoSoftware2\bin\Npgsql.EntityFramework.dll
+C:\Users\Admin\source\repos\ProyectoSoftware2\ProyectoSoftware2\bin\Npgsql.xml
+C:\Users\Admin\source\repos\ProyectoSoftware2\ProyectoSoftware2\bin\Npgsql.EntityFramework.xml
+C:\Users\Admin\source\repos\ProyectoSoftware2\ProyectoSoftware2\bin\de\Npgsql.resources.dll
+C:\Users\Admin\source\repos\ProyectoSoftware2\ProyectoSoftware2\bin\es\Npgsql.resources.dll
+C:\Users\Admin\source\repos\ProyectoSoftware2\ProyectoSoftware2\bin\fi\Npgsql.resources.dll
+C:\Users\Admin\source\repos\ProyectoSoftware2\ProyectoSoftware2\bin\fr\Npgsql.resources.dll
+C:\Users\Admin\source\repos\ProyectoSoftware2\ProyectoSoftware2\bin\ja\Npgsql.resources.dll
+C:\Users\Admin\source\repos\ProyectoSoftware2\ProyectoSoftware2\bin\zh-CN\Npgsql.resources.dll
