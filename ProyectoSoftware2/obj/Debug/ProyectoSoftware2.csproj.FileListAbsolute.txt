@@ -147,3 +147,5 @@ C:\Users\Admin\source\repos\ProyectoSoftware2\ProyectoSoftware2\bin\fi\Npgsql.re
 C:\Users\Admin\source\repos\ProyectoSoftware2\ProyectoSoftware2\bin\fr\Npgsql.resources.dll
 C:\Users\Admin\source\repos\ProyectoSoftware2\ProyectoSoftware2\bin\ja\Npgsql.resources.dll
 C:\Users\Admin\source\repos\ProyectoSoftware2\ProyectoSoftware2\bin\zh-CN\Npgsql.resources.dll
+C:\Users\Admin\source\repos\ProyectoSoftware2\ProyectoSoftware2\obj\Debug\ProyectoSoftware2.Migrations.M1.resources
+C:\Users\Admin\source\repos\ProyectoSoftware2\ProyectoSoftware2\obj\Debug\ProyectoSoftware2.csproj.GenerateResource.Cache
