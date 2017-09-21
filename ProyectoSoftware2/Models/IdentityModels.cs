@@ -29,5 +29,15 @@ namespace ProyectoSoftware2.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<ProyectoSoftware2.Models.Area> Areas { get; set; }
+
+        public System.Data.Entity.DbSet<ProyectoSoftware2.Models.Profesor> Profesors { get; set; }
+
+        public System.Data.Entity.DbSet<ProyectoSoftware2.Models.AreaXProfesor> AreaXProfesors { get; set; }
+
+        public System.Data.Entity.DbSet<ProyectoSoftware2.Models.Sala> Salas { get; set; }
+
+        public System.Data.Entity.DbSet<ProyectoSoftware2.Models.Bloque> Bloques { get; set; }
     }
 }
