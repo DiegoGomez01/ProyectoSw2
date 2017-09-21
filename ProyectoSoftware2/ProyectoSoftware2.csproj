@@ -201,23 +201,27 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AreasController.cs" />
     <Compile Include="Controllers\AreaXProfesorsController.cs" />
+    <Compile Include="Controllers\BloquesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProfesorsController.cs" />
+    <Compile Include="Controllers\SalasController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201709210110409_M1.cs" />
-    <Compile Include="Migrations\201709210110409_M1.Designer.cs">
-      <DependentUpon>201709210110409_M1.cs</DependentUpon>
+    <Compile Include="Migrations\201709212254206_M1.cs" />
+    <Compile Include="Migrations\201709212254206_M1.Designer.cs">
+      <DependentUpon>201709212254206_M1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Area.cs" />
     <Compile Include="Models\AreaXProfesor.cs" />
+    <Compile Include="Models\Bloque.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Profesor.cs" />
+    <Compile Include="Models\Sala.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -293,6 +297,16 @@
     <Content Include="Views\AreaXProfesors\Details.cshtml" />
     <Content Include="Views\AreaXProfesors\Edit.cshtml" />
     <Content Include="Views\AreaXProfesors\Index.cshtml" />
+    <Content Include="Views\Salas\Create.cshtml" />
+    <Content Include="Views\Salas\Delete.cshtml" />
+    <Content Include="Views\Salas\Details.cshtml" />
+    <Content Include="Views\Salas\Edit.cshtml" />
+    <Content Include="Views\Salas\Index.cshtml" />
+    <Content Include="Views\Bloques\Create.cshtml" />
+    <Content Include="Views\Bloques\Delete.cshtml" />
+    <Content Include="Views\Bloques\Details.cshtml" />
+    <Content Include="Views\Bloques\Edit.cshtml" />
+    <Content Include="Views\Bloques\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -311,8 +325,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201709210110409_M1.resx">
-      <DependentUpon>201709210110409_M1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201709212254206_M1.resx">
+      <DependentUpon>201709212254206_M1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

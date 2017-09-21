@@ -35,5 +35,9 @@ namespace ProyectoSoftware2.Models
         public System.Data.Entity.DbSet<ProyectoSoftware2.Models.Profesor> Profesors { get; set; }
 
         public System.Data.Entity.DbSet<ProyectoSoftware2.Models.AreaXProfesor> AreaXProfesors { get; set; }
+
+        public System.Data.Entity.DbSet<ProyectoSoftware2.Models.Sala> Salas { get; set; }
+
+        public System.Data.Entity.DbSet<ProyectoSoftware2.Models.Bloque> Bloques { get; set; }
     }
 }

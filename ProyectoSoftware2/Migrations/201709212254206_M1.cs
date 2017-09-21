@@ -12,7 +12,7 @@ namespace ProyectoSoftware2.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Nombre = c.String(),
+                        Nombre = c.String(nullable: false),
                         Descripcion = c.String(),
                     })
                 .PrimaryKey(t => t.Id);
@@ -36,11 +36,36 @@ namespace ProyectoSoftware2.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Nombre = c.String(),
+                        Nombre = c.String(nullable: false),
                         Telefono = c.Int(nullable: false),
-                        Correo = c.String(),
+                        Correo = c.String(nullable: false),
                     })
                 .PrimaryKey(t => t.Id);
+            
+            CreateTable(
+                "dbo.Bloques",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Nombre = c.String(nullable: false),
+                        Descripcion = c.String(),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
+                "dbo.Salas",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Nombre = c.String(nullable: false),
+                        BloqueId = c.Int(nullable: false),
+                        VideoBeam = c.Boolean(nullable: false),
+                        Televisor = c.Boolean(nullable: false),
+                        Descripcion = c.String(),
+                    })
+                .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.Bloques", t => t.BloqueId, cascadeDelete: true)
+                .Index(t => t.BloqueId);
             
             CreateTable(
                 "dbo.AspNetRoles",
@@ -118,6 +143,7 @@ namespace ProyectoSoftware2.Migrations
             DropForeignKey("dbo.AspNetUserLogins", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserClaims", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserRoles", "RoleId", "dbo.AspNetRoles");
+            DropForeignKey("dbo.Salas", "BloqueId", "dbo.Bloques");
             DropForeignKey("dbo.AreaXProfesors", "ProfesorId", "dbo.Profesors");
             DropForeignKey("dbo.AreaXProfesors", "AreaId", "dbo.Areas");
             DropIndex("dbo.AspNetUserLogins", new[] { "UserId" });
@@ -126,6 +152,7 @@ namespace ProyectoSoftware2.Migrations
             DropIndex("dbo.AspNetUserRoles", new[] { "RoleId" });
             DropIndex("dbo.AspNetUserRoles", new[] { "UserId" });
             DropIndex("dbo.AspNetRoles", "RoleNameIndex");
+            DropIndex("dbo.Salas", new[] { "BloqueId" });
             DropIndex("dbo.AreaXProfesors", new[] { "AreaId" });
             DropIndex("dbo.AreaXProfesors", new[] { "ProfesorId" });
             DropTable("dbo.AspNetUserLogins");
@@ -133,6 +160,8 @@ namespace ProyectoSoftware2.Migrations
             DropTable("dbo.AspNetUsers");
             DropTable("dbo.AspNetUserRoles");
             DropTable("dbo.AspNetRoles");
+            DropTable("dbo.Salas");
+            DropTable("dbo.Bloques");
             DropTable("dbo.Profesors");
             DropTable("dbo.AreaXProfesors");
             DropTable("dbo.Areas");
