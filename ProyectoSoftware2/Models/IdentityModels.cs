@@ -29,5 +29,9 @@ namespace ProyectoSoftware2.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<ProyectoSoftware2.Models.Materia> Materias { get; set; }
+
+        public System.Data.Entity.DbSet<ProyectoSoftware2.Models.SolicitarCupo> SolicitarCupoes { get; set; }
     }
 }
