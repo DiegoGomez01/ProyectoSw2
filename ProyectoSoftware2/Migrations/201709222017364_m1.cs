@@ -23,12 +23,24 @@ namespace ProyectoSoftware2.Migrations
                     {
                         Id = c.Int(nullable: false, identity: true),
                         MateriaId = c.Int(nullable: false),
-                        CodigoEstudiante = c.Int(nullable: false),
+                        CodEstudiante = c.Int(nullable: false),
                         NombreEstudiante = c.String(),
+                        Fecha = c.DateTime(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.Materias", t => t.MateriaId, cascadeDelete: true)
                 .Index(t => t.MateriaId);
+            
+            CreateTable(
+                "dbo.Plantillas",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        nombre = c.String(),
+                        descripcion = c.String(),
+                        ruta = c.String(),
+                    })
+                .PrimaryKey(t => t.Id);
             
             CreateTable(
                 "dbo.AspNetRoles",
@@ -119,6 +131,7 @@ namespace ProyectoSoftware2.Migrations
             DropTable("dbo.AspNetUsers");
             DropTable("dbo.AspNetUserRoles");
             DropTable("dbo.AspNetRoles");
+            DropTable("dbo.Plantillas");
             DropTable("dbo.SolicitarCupoes");
             DropTable("dbo.Materias");
         }
