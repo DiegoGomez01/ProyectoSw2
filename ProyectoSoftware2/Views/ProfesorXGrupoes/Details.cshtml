@@ -1,0 +1,42 @@
+﻿@model ProyectoSoftware2.Models.ProfesorXGrupo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ProfesorXGrupo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Grupo.CODIGOMATERIA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Grupo.CODIGOMATERIA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Profesor.P_APELLIDO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Profesor.P_APELLIDO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HorasDictadas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HorasDictadas)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

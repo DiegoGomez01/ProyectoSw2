@@ -1,0 +1,50 @@
+﻿@model ProyectoSoftware2.Models.HorarioDesfavorableProfesor
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>HorarioDesfavorableProfesor</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CEDULADOCENTE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CEDULADOCENTE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DIA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DIA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HORA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HORA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DURACION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DURACION)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

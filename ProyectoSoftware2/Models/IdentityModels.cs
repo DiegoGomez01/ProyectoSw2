@@ -39,5 +39,25 @@ namespace ProyectoSoftware2.Models
         public System.Data.Entity.DbSet<ProyectoSoftware2.Models.Sala> Salas { get; set; }
 
         public System.Data.Entity.DbSet<ProyectoSoftware2.Models.Bloque> Bloques { get; set; }
+
+        public System.Data.Entity.DbSet<ProyectoSoftware2.Models.Materia> Materias { get; set; }
+
+        public System.Data.Entity.DbSet<ProyectoSoftware2.Models.Estudiante> Estudiantes { get; set; }
+
+        public System.Data.Entity.DbSet<ProyectoSoftware2.Models.EstudianteXMateria> EstudianteXMaterias { get; set; }
+
+        public System.Data.Entity.DbSet<ProyectoSoftware2.Models.Grupo> Grupoes { get; set; }
+
+        public System.Data.Entity.DbSet<ProyectoSoftware2.Models.HorarioDesfavorableProfesor> HorarioDesfavorableProfesors { get; set; }
+
+        public System.Data.Entity.DbSet<ProyectoSoftware2.Models.HorarioGrupo> HorarioGrupoes { get; set; }
+
+        public System.Data.Entity.DbSet<ProyectoSoftware2.Models.MateriaXPrerequisito> MateriaXPrerequisitoes { get; set; }
+
+        public System.Data.Entity.DbSet<ProyectoSoftware2.Models.PreRequisito> PreRequisitoes { get; set; }
+
+        public System.Data.Entity.DbSet<ProyectoSoftware2.Models.ProfesorXGrupo> ProfesorXGrupoes { get; set; }
+
+        public System.Data.Entity.DbSet<ProyectoSoftware2.Models.EstudianteXGrupo> EstudianteXGrupoes { get; set; }
     }
 }

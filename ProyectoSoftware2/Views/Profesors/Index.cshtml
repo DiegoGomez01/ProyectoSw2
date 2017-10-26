@@ -12,13 +12,34 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Nombre)
+            @Html.DisplayNameFor(model => model.P_APELLIDO)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Telefono)
+            @Html.DisplayNameFor(model => model.S_APELLIDO)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Correo)
+            @Html.DisplayNameFor(model => model.NOMBRES)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DIRECCION)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TELEFONO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SEXO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FECHA_INICIO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FECHA_FIN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DEPARTAMENTO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EMAIL)
         </th>
         <th></th>
     </tr>
@@ -26,13 +47,34 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Nombre)
+            @Html.DisplayFor(modelItem => item.P_APELLIDO)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Telefono)
+            @Html.DisplayFor(modelItem => item.S_APELLIDO)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Correo)
+            @Html.DisplayFor(modelItem => item.NOMBRES)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DIRECCION)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TELEFONO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SEXO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FECHA_INICIO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FECHA_FIN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DEPARTAMENTO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EMAIL)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |

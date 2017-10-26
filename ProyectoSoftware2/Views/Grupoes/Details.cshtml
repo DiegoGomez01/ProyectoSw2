@@ -1,0 +1,114 @@
+﻿@model ProyectoSoftware2.Models.Grupo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Grupo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CODIGOMATERIA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CODIGOMATERIA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ANO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ANO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PERIODO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PERIODO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GRUPO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GRUPO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CUPO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CUPO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FECHA_INICIO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FECHA_INICIO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FECHA_FINAL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FECHA_FINAL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CUPO_LINEA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CUPO_LINEA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.INICIO_INSCRIPCION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.INICIO_INSCRIPCION)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FIN_INSCRIPCION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FIN_INSCRIPCION)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FIN_CANCELACION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FIN_CANCELACION)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FECHA_CREACION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FECHA_CREACION)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

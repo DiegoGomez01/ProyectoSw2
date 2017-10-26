@@ -1,0 +1,48 @@
+﻿@model ProyectoSoftware2.Models.ProfesorXGrupo
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>ProfesorXGrupo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Grupo.CODIGOMATERIA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Grupo.CODIGOMATERIA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Profesor.P_APELLIDO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Profesor.P_APELLIDO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HorasDictadas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HorasDictadas)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

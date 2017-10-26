@@ -1,0 +1,42 @@
+﻿@model ProyectoSoftware2.Models.PreRequisito
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PreRequisito</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PENSUM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PENSUM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CODIGOMATERIA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CODIGOMATERIA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CODIGOMATERIA_PRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CODIGOMATERIA_PRE)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

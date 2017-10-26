@@ -46,7 +46,7 @@ namespace ProyectoSoftware2.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Nombre,Telefono,Correo")] Profesor profesor)
+        public ActionResult Create([Bind(Include = "Id,P_APELLIDO,S_APELLIDO,NOMBRES,DIRECCION,TELEFONO,SEXO,FECHA_INICIO,FECHA_FIN,DEPARTAMENTO,EMAIL")] Profesor profesor)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace ProyectoSoftware2.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Nombre,Telefono,Correo")] Profesor profesor)
+        public ActionResult Edit([Bind(Include = "Id,P_APELLIDO,S_APELLIDO,NOMBRES,DIRECCION,TELEFONO,SEXO,FECHA_INICIO,FECHA_FIN,DEPARTAMENTO,EMAIL")] Profesor profesor)
         {
             if (ModelState.IsValid)
             {

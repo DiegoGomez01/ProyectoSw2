@@ -1,0 +1,90 @@
+﻿@model ProyectoSoftware2.Models.Materia
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Materia</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NOMBRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NOMBRE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HORAS_TEO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HORAS_TEO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HORAS_PRAC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HORAS_PRAC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.H_NOPRESEN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.H_NOPRESEN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DEPARTAMENTO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DEPARTAMENTO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CREDITOS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CREDITOS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MODALIDAD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MODALIDAD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CUPO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CUPO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ABIERTA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ABIERTA)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
