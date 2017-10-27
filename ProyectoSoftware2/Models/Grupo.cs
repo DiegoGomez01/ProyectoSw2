@@ -16,7 +16,7 @@ namespace ProyectoSoftware2.Models
         [Required]
         public string PERIODO { set; get; }
         [Required]
-        public string GRUPO { set; get; }
+        public string REFERENCIA_GRUPO { set; get; }
         [Required]
         public int CUPO { set; get; }
         [Required]

@@ -3,7 +3,7 @@ namespace ProyectoSoftware2.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class ModelsAll : DbMigration
+    public partial class ModelsUpdate : DbMigration
     {
         public override void Up()
         {
@@ -202,6 +202,20 @@ namespace ProyectoSoftware2.Migrations
                 .PrimaryKey(t => t.Id);
             
             CreateTable(
+                "dbo.SolicitudEstudianteMaterias",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        EstudianteId = c.Int(nullable: false),
+                        MateriaId = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.Estudiantes", t => t.EstudianteId, cascadeDelete: true)
+                .ForeignKey("dbo.Materias", t => t.MateriaId, cascadeDelete: true)
+                .Index(t => t.EstudianteId)
+                .Index(t => t.MateriaId);
+            
+            CreateTable(
                 "dbo.HorarioGrupoes",
                 c => new
                     {
@@ -326,6 +340,8 @@ namespace ProyectoSoftware2.Migrations
             DropForeignKey("dbo.ProfesorXGrupoes", "GrupoId", "dbo.Grupoes");
             DropForeignKey("dbo.HorarioGrupoes", "Group_Id", "dbo.Grupoes");
             DropForeignKey("dbo.EstudianteXGrupoes", "GrupoId", "dbo.Grupoes");
+            DropForeignKey("dbo.SolicitudEstudianteMaterias", "MateriaId", "dbo.Materias");
+            DropForeignKey("dbo.SolicitudEstudianteMaterias", "EstudianteId", "dbo.Estudiantes");
             DropForeignKey("dbo.MateriaXPrerequisitoes", "PreRequisitoId", "dbo.PreRequisitoes");
             DropForeignKey("dbo.MateriaXPrerequisitoes", "MateriaId", "dbo.Materias");
             DropForeignKey("dbo.EstudianteXMaterias", "Materia_Id", "dbo.Materias");
@@ -342,6 +358,8 @@ namespace ProyectoSoftware2.Migrations
             DropIndex("dbo.AspNetRoles", "RoleNameIndex");
             DropIndex("dbo.Salas", new[] { "BloqueId" });
             DropIndex("dbo.HorarioGrupoes", new[] { "Group_Id" });
+            DropIndex("dbo.SolicitudEstudianteMaterias", new[] { "MateriaId" });
+            DropIndex("dbo.SolicitudEstudianteMaterias", new[] { "EstudianteId" });
             DropIndex("dbo.MateriaXPrerequisitoes", new[] { "PreRequisitoId" });
             DropIndex("dbo.MateriaXPrerequisitoes", new[] { "MateriaId" });
             DropIndex("dbo.EstudianteXMaterias", new[] { "Materia_Id" });
@@ -361,6 +379,7 @@ namespace ProyectoSoftware2.Migrations
             DropTable("dbo.Salas");
             DropTable("dbo.Bloques");
             DropTable("dbo.HorarioGrupoes");
+            DropTable("dbo.SolicitudEstudianteMaterias");
             DropTable("dbo.PreRequisitoes");
             DropTable("dbo.MateriaXPrerequisitoes");
             DropTable("dbo.Materias");

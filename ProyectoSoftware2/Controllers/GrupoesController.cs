@@ -46,7 +46,7 @@ namespace ProyectoSoftware2.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,CODIGOMATERIA,ANO,PERIODO,GRUPO,CUPO,FECHA_INICIO,FECHA_FINAL,CUPO_LINEA,INICIO_INSCRIPCION,FIN_INSCRIPCION,FIN_CANCELACION,FECHA_CREACION")] Grupo grupo)
+        public ActionResult Create([Bind(Include = "Id,CODIGOMATERIA,ANO,PERIODO,REFERENCIA_GRUPO,CUPO,FECHA_INICIO,FECHA_FINAL,CUPO_LINEA,INICIO_INSCRIPCION,FIN_INSCRIPCION,FIN_CANCELACION,FECHA_CREACION")] Grupo grupo)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace ProyectoSoftware2.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,CODIGOMATERIA,ANO,PERIODO,GRUPO,CUPO,FECHA_INICIO,FECHA_FINAL,CUPO_LINEA,INICIO_INSCRIPCION,FIN_INSCRIPCION,FIN_CANCELACION,FECHA_CREACION")] Grupo grupo)
+        public ActionResult Edit([Bind(Include = "Id,CODIGOMATERIA,ANO,PERIODO,REFERENCIA_GRUPO,CUPO,FECHA_INICIO,FECHA_FINAL,CUPO_LINEA,INICIO_INSCRIPCION,FIN_INSCRIPCION,FIN_CANCELACION,FECHA_CREACION")] Grupo grupo)
         {
             if (ModelState.IsValid)
             {

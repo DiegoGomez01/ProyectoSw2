@@ -59,5 +59,7 @@ namespace ProyectoSoftware2.Models
         public System.Data.Entity.DbSet<ProyectoSoftware2.Models.ProfesorXGrupo> ProfesorXGrupoes { get; set; }
 
         public System.Data.Entity.DbSet<ProyectoSoftware2.Models.EstudianteXGrupo> EstudianteXGrupoes { get; set; }
+
+        public System.Data.Entity.DbSet<ProyectoSoftware2.Models.SolicitudEstudianteMateria> SolicitudEstudianteMaterias { get; set; }
     }
 }

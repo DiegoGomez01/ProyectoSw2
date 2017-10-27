@@ -30,5 +30,6 @@ namespace ProyectoSoftware2.Models
 
         public virtual ICollection<MateriaXPrerequisito> ColPreRequisitoMateria { get; set; }
         public virtual ICollection<EstudianteXMateria> colEstudianteMateria { get; set; }
+        public virtual ICollection<SolicitudEstudianteMateria> colSolicitudEstudianteMateria { set; get; }
     }
 }
