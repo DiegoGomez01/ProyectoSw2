@@ -10,6 +10,8 @@ namespace ProyectoSoftware2.Models
     {
         public int Id { set; get; }
         [Required]
+        public string CODIGO { set; get; }
+        [Required]
         public string NOMBRE { set; get; }
         [Required]
         public int HORAS_TEO { set; get; }

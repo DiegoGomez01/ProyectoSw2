@@ -41,6 +41,6 @@ namespace ProyectoSoftware2.Models
 
         public virtual ICollection<EstudianteXGrupo> colEstudianteGrupo { get; set; }
         public virtual ICollection<EstudianteXMateria> colEstudianteMateria { get; set; }
-        public virtual ICollection <SolicitudEstudianteMateria> colSolicitudEstudianteMateria { set; get; }
+        public virtual ICollection<SolicitudEstudianteMateria> colSolicitudEstudianteMateria { set; get; }
     }
 }

@@ -7,13 +7,13 @@ namespace ProyectoSoftware2.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class ModelsUpdate : IMigrationMetadata
+    public sealed partial class ModelsAll : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(ModelsUpdate));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(ModelsAll));
         
         string IMigrationMetadata.Id
         {
-            get { return "201710272259055_ModelsUpdate"; }
+            get { return "201710280025246_ModelsAll"; }
         }
         
         string IMigrationMetadata.Source

@@ -291,9 +291,6 @@ C:\Users\Admin\source\repos\ProyectoSw2\ProyectoSoftware2\bin\es\Microsoft.Owin.
 C:\Users\Admin\source\repos\ProyectoSw2\ProyectoSoftware2\bin\es\Microsoft.Owin.Security.Google.resources.dll
 C:\Users\Admin\source\repos\ProyectoSw2\ProyectoSoftware2\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
 C:\Users\Admin\source\repos\ProyectoSw2\ProyectoSoftware2\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
-C:\Users\Admin\source\repos\ProyectoSw2\ProyectoSoftware2\obj\Debug\ProyectoSoftware2.Migrations.ModelsUpdate.resources
-C:\Users\Admin\source\repos\ProyectoSw2\ProyectoSoftware2\obj\Debug\ProyectoSoftware2.Migrations.ModelGroupUpdate.resources
-C:\Users\Admin\source\repos\ProyectoSw2\ProyectoSoftware2\obj\Debug\ProyectoSoftware2.csproj.GenerateResource.Cache
 C:\Users\Admin\source\repos\ProyectoSw2\ProyectoSoftware2\obj\Debug\ProyectoSoftware2.csproj.CoreCompileInputs.cache
 C:\Users\Admin\source\repos\ProyectoSw2\ProyectoSoftware2\obj\Debug\ProyectoSoftware2.dll
 C:\Users\Admin\source\repos\ProyectoSw2\ProyectoSoftware2\obj\Debug\ProyectoSoftware2.pdb
@@ -301,3 +298,7 @@ C:\Users\Admin\source\repos\ProyectoSw2\ProyectoSoftware2\obj\Debug\ProyectoSoft
 C:\Users\Admin\source\repos\ProyectoSw2\ProyectoSoftware2\bin\ProyectoSoftware2.dll.config
 C:\Users\Admin\source\repos\ProyectoSw2\ProyectoSoftware2\bin\ProyectoSoftware2.dll
 C:\Users\Admin\source\repos\ProyectoSw2\ProyectoSoftware2\bin\ProyectoSoftware2.pdb
+C:\Users\Admin\source\repos\ProyectoSw2\ProyectoSoftware2\obj\Debug\ProyectoSoftware2.Migrations.ModelsAll.resources
+C:\Users\Admin\source\repos\ProyectoSw2\ProyectoSoftware2\obj\Debug\ProyectoSoftware2.csproj.GenerateResource.Cache
+C:\Users\Admin\source\repos\ProyectoSw2\ProyectoSoftware2\obj\Debug\ProyectoSoftware2.Migrations.ModelsAll2.resources
+C:\Users\Admin\source\repos\ProyectoSw2\ProyectoSoftware2\obj\Debug\ProyectoSoftware2.Migrations.Models3.resources

@@ -220,13 +220,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201710272259055_ModelsUpdate.cs" />
-    <Compile Include="Migrations\201710272259055_ModelsUpdate.Designer.cs">
-      <DependentUpon>201710272259055_ModelsUpdate.cs</DependentUpon>
+    <Compile Include="Migrations\201710280025246_ModelsAll.cs" />
+    <Compile Include="Migrations\201710280025246_ModelsAll.Designer.cs">
+      <DependentUpon>201710280025246_ModelsAll.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201710272315201_ModelGroupUpdate.cs" />
-    <Compile Include="Migrations\201710272315201_ModelGroupUpdate.Designer.cs">
-      <DependentUpon>201710272315201_ModelGroupUpdate.cs</DependentUpon>
+    <Compile Include="Migrations\201710280032151_ModelsAll2.cs" />
+    <Compile Include="Migrations\201710280032151_ModelsAll2.Designer.cs">
+      <DependentUpon>201710280032151_ModelsAll2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710280035148_Models3.cs" />
+    <Compile Include="Migrations\201710280035148_Models3.Designer.cs">
+      <DependentUpon>201710280035148_Models3.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -354,11 +358,6 @@
     <Content Include="Views\HorarioGrupoes\Details.cshtml" />
     <Content Include="Views\HorarioGrupoes\Edit.cshtml" />
     <Content Include="Views\HorarioGrupoes\Index.cshtml" />
-    <Content Include="Views\Materias\Create.cshtml" />
-    <Content Include="Views\Materias\Delete.cshtml" />
-    <Content Include="Views\Materias\Details.cshtml" />
-    <Content Include="Views\Materias\Edit.cshtml" />
-    <Content Include="Views\Materias\Index.cshtml" />
     <Content Include="Views\MateriaXPrerequisitoes\Create.cshtml" />
     <Content Include="Views\MateriaXPrerequisitoes\Delete.cshtml" />
     <Content Include="Views\MateriaXPrerequisitoes\Details.cshtml" />
@@ -384,6 +383,11 @@
     <Content Include="Views\EstudianteXGrupoes\Details.cshtml" />
     <Content Include="Views\EstudianteXGrupoes\Edit.cshtml" />
     <Content Include="Views\EstudianteXGrupoes\Index.cshtml" />
+    <Content Include="Views\Materias\Create.cshtml" />
+    <Content Include="Views\Materias\Delete.cshtml" />
+    <Content Include="Views\Materias\Details.cshtml" />
+    <Content Include="Views\Materias\Edit.cshtml" />
+    <Content Include="Views\Materias\Index.cshtml" />
     <Content Include="Views\SolicitudEstudianteMaterias\Create.cshtml" />
     <Content Include="Views\SolicitudEstudianteMaterias\Delete.cshtml" />
     <Content Include="Views\SolicitudEstudianteMaterias\Details.cshtml" />
@@ -407,11 +411,14 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201710272259055_ModelsUpdate.resx">
-      <DependentUpon>201710272259055_ModelsUpdate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201710280025246_ModelsAll.resx">
+      <DependentUpon>201710280025246_ModelsAll.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201710272315201_ModelGroupUpdate.resx">
-      <DependentUpon>201710272315201_ModelGroupUpdate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201710280032151_ModelsAll2.resx">
+      <DependentUpon>201710280032151_ModelsAll2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710280035148_Models3.resx">
+      <DependentUpon>201710280035148_Models3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

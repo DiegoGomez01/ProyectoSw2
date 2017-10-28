@@ -17,7 +17,7 @@ namespace ProyectoSoftware2.Controllers
         // GET: SolicitudEstudianteMaterias
         public ActionResult Index()
         {
-            var solicitudEstudianteMaterias = db.SolicitudEstudianteMaterias.Include(s => s.Estudiante).Include(s => s.Materia);
+            var solicitudEstudianteMaterias = db.SolicitudEstudianteMaterias.Include(s => s.Materia);
             return View(solicitudEstudianteMaterias.ToList());
         }
 
@@ -39,8 +39,7 @@ namespace ProyectoSoftware2.Controllers
         // GET: SolicitudEstudianteMaterias/Create
         public ActionResult Create()
         {
-            ViewBag.EstudianteId = new SelectList(db.Estudiantes, "Id", "CODIGO");
-            ViewBag.MateriaId = new SelectList(db.Materias, "Id", "NOMBRE");
+            ViewBag.MateriaId = new SelectList(db.Materias, "Id", "CODIGO");
             return View();
         }
 
@@ -49,7 +48,7 @@ namespace ProyectoSoftware2.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,EstudianteId,MateriaId")] SolicitudEstudianteMateria solicitudEstudianteMateria)
+        public ActionResult Create([Bind(Include = "Id,CodigoEstudiante,MateriaId")] SolicitudEstudianteMateria solicitudEstudianteMateria)
         {
             if (ModelState.IsValid)
             {
@@ -58,8 +57,7 @@ namespace ProyectoSoftware2.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.EstudianteId = new SelectList(db.Estudiantes, "Id", "CODIGO", solicitudEstudianteMateria.EstudianteId);
-            ViewBag.MateriaId = new SelectList(db.Materias, "Id", "NOMBRE", solicitudEstudianteMateria.MateriaId);
+            ViewBag.MateriaId = new SelectList(db.Materias, "Id", "CODIGO", solicitudEstudianteMateria.MateriaId);
             return View(solicitudEstudianteMateria);
         }
 
@@ -75,8 +73,7 @@ namespace ProyectoSoftware2.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.EstudianteId = new SelectList(db.Estudiantes, "Id", "CODIGO", solicitudEstudianteMateria.EstudianteId);
-            ViewBag.MateriaId = new SelectList(db.Materias, "Id", "NOMBRE", solicitudEstudianteMateria.MateriaId);
+            ViewBag.MateriaId = new SelectList(db.Materias, "Id", "CODIGO", solicitudEstudianteMateria.MateriaId);
             return View(solicitudEstudianteMateria);
         }
 
@@ -85,7 +82,7 @@ namespace ProyectoSoftware2.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,EstudianteId,MateriaId")] SolicitudEstudianteMateria solicitudEstudianteMateria)
+        public ActionResult Edit([Bind(Include = "Id,CodigoEstudiante,MateriaId")] SolicitudEstudianteMateria solicitudEstudianteMateria)
         {
             if (ModelState.IsValid)
             {
@@ -93,8 +90,7 @@ namespace ProyectoSoftware2.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.EstudianteId = new SelectList(db.Estudiantes, "Id", "CODIGO", solicitudEstudianteMateria.EstudianteId);
-            ViewBag.MateriaId = new SelectList(db.Materias, "Id", "NOMBRE", solicitudEstudianteMateria.MateriaId);
+            ViewBag.MateriaId = new SelectList(db.Materias, "Id", "CODIGO", solicitudEstudianteMateria.MateriaId);
             return View(solicitudEstudianteMateria);
         }
 

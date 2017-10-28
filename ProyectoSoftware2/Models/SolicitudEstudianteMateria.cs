@@ -9,7 +9,7 @@ namespace ProyectoSoftware2.Models
     {
         public int Id { set; get; }
         [required]
-        public int EstudianteId { set; get; }
+        public string CodigoEstudiante { set; get; }
         [required]
         public int MateriaId { set; get; }
 
