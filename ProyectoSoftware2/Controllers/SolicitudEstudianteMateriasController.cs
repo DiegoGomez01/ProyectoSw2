@@ -52,9 +52,16 @@ namespace ProyectoSoftware2.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.SolicitudEstudianteMaterias.Add(solicitudEstudianteMateria);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                if (StExist(solicitudEstudianteMateria.CodigoEstudiante)){
+                    db.SolicitudEstudianteMaterias.Add(solicitudEstudianteMateria);
+                    db.SaveChanges();
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    ViewBag.Message = "NO EXISTE";
+                }
+                
             }
 
             ViewBag.MateriaId = new SelectList(db.Materias, "Id", "CODIGO", solicitudEstudianteMateria.MateriaId);
@@ -93,7 +100,16 @@ namespace ProyectoSoftware2.Controllers
             ViewBag.MateriaId = new SelectList(db.Materias, "Id", "CODIGO", solicitudEstudianteMateria.MateriaId);
             return View(solicitudEstudianteMateria);
         }
-
+        //Validate Exist Student
+        public bool StExist(string id)
+        {
+            bool prueba = db.Estudiantes.Any(estudiante => estudiante.CODIGO==id);
+            if (prueba)
+            {
+                return true;
+            }
+            return false;
+        } 
         // GET: SolicitudEstudianteMaterias/Delete/5
         public ActionResult Delete(int? id)
         {
