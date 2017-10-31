@@ -23,9 +23,16 @@ namespace ProyectoSoftware2
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/datatables").Include(
+                  "~/Scripts/DataTables/jquery.dataTables.js", "~/Scripts/DataTables/dataTables.tableTools.js",
+                  "~/Scripts/DataTables/dataTables.scroller.min.js",
+                  "~/Scripts/DataTables/dataTables.bootstrap.js"
+
+                  ));
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                      "~/Content/DataTables/css/dataTables.bootstrap.css"));
         }
     }
 }

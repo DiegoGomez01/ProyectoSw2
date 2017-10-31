@@ -17,7 +17,8 @@ namespace ProyectoSoftware2.Controllers
         // GET: HorarioDesfavorableProfesors
         public ActionResult Index()
         {
-            return View(db.HorarioDesfavorableProfesors.ToList());
+            var horarioDesfavorableProfesors = db.HorarioDesfavorableProfesors.Include(h => h.Profesor);
+            return View(horarioDesfavorableProfesors.ToList());
         }
 
         // GET: HorarioDesfavorableProfesors/Details/5
@@ -38,6 +39,7 @@ namespace ProyectoSoftware2.Controllers
         // GET: HorarioDesfavorableProfesors/Create
         public ActionResult Create()
         {
+            ViewBag.ProfesorId = new SelectList(db.Profesors, "Id", "P_APELLIDO");
             return View();
         }
 
@@ -46,7 +48,7 @@ namespace ProyectoSoftware2.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,CEDULADOCENTE,DIA,HORA,DURACION")] HorarioDesfavorableProfesor horarioDesfavorableProfesor)
+        public ActionResult Create([Bind(Include = "Id,ProfesorId,DIA,HORA,DURACION")] HorarioDesfavorableProfesor horarioDesfavorableProfesor)
         {
             if (ModelState.IsValid)
             {
@@ -55,6 +57,7 @@ namespace ProyectoSoftware2.Controllers
                 return RedirectToAction("Index");
             }
 
+            ViewBag.ProfesorId = new SelectList(db.Profesors, "Id", "P_APELLIDO", horarioDesfavorableProfesor.ProfesorId);
             return View(horarioDesfavorableProfesor);
         }
 
@@ -70,6 +73,7 @@ namespace ProyectoSoftware2.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.ProfesorId = new SelectList(db.Profesors, "Id", "P_APELLIDO", horarioDesfavorableProfesor.ProfesorId);
             return View(horarioDesfavorableProfesor);
         }
 
@@ -78,7 +82,7 @@ namespace ProyectoSoftware2.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,CEDULADOCENTE,DIA,HORA,DURACION")] HorarioDesfavorableProfesor horarioDesfavorableProfesor)
+        public ActionResult Edit([Bind(Include = "Id,ProfesorId,DIA,HORA,DURACION")] HorarioDesfavorableProfesor horarioDesfavorableProfesor)
         {
             if (ModelState.IsValid)
             {
@@ -86,6 +90,7 @@ namespace ProyectoSoftware2.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            ViewBag.ProfesorId = new SelectList(db.Profesors, "Id", "P_APELLIDO", horarioDesfavorableProfesor.ProfesorId);
             return View(horarioDesfavorableProfesor);
         }
 

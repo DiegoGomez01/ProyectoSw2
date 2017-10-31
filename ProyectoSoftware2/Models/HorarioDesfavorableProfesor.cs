@@ -10,7 +10,7 @@ namespace ProyectoSoftware2.Models
     {
         public int Id { set; get; }
         [Required]
-        public string CEDULADOCENTE { set; get; }
+        public int ProfesorId { set; get; }
         [Required]
         public string DIA { set; get; }
         [Required]
