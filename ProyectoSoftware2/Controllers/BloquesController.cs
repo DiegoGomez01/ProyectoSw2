@@ -14,7 +14,7 @@ namespace ProyectoSoftware2.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        // GET: Bloques
+        // GET: Bloquess
         public ActionResult Index()
         {
             return View(db.Bloques.ToList());
